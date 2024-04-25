@@ -1,4 +1,6 @@
 // Récupération des mes éléments HTML de départ //
+let popup = document.getElementById("pop");
+let buttonpop = document.getElementById("buttonpop");
 let zonedepart= document.getElementById("depart");
 let boutondepart = document.getElementById("decouvrir")
 let avataremployeurH =document.getElementById("avatarhomme")
@@ -31,14 +33,7 @@ let avatar01 = {
     genre : null,
     nom : null ,
 }
-if( avatar01.genre === 'femme')
-{
-    imgprofilh.style.display="none"
-}
-else{
-    imgprofilh.style.display=""
-    imgprofilf.style.display="none"
-}
+
 
 
 
@@ -68,11 +63,20 @@ let dialut = document.createElement("img");
 dialut.classList.add("lesavatarsut");
 
 
+
     if(avatar01.genre === 'femme'){
         dialut.src = "images/_a61c3a5d-2276-41f5-901d-e13c8b447ca2.jpeg";  
     }
     else{
         dialut.src = "images/_5bb61b85-dd98-4c22-be8e-5a1b622c5b80.jpeg";
+    }
+    if(avatar01.genre === 'femme')
+    {  
+        imgprofilh.style.display="none";
+    }
+    else{
+        
+        imgprofilf.style.display="none";
     }
 
 dialogbox.appendChild(dialut);
@@ -86,14 +90,22 @@ dialogbox.appendChild(dialut);
 
 // Dialogues //
 
+//Dial 01
 let text01 = document.createElement("p")
 text01.classList.add("textsdialogues")
+
 let boutontext01= document.createElement("button")
 boutontext01.textContent="Pourquoi pas, dis m'en plus sur toi avant.";
 boutontext01.classList.add("boutonstexts");
 let boutontext02= document.createElement("button")
 boutontext02.textContent="Non désolé, je m'en vais";
 boutontext02.classList.add("boutonstexts");
+
+//Dial 02
+
+let text02 = document.createElement("p")
+text02.classList.add("textsdialogues")
+
 
 
 function textsdialogue(){
@@ -102,6 +114,17 @@ function textsdialogue(){
     dialogbox.appendChild(text01)
     dialogbox.appendChild(boutontext01)
     dialogbox.appendChild(boutontext02)
+    zoneprofil.textContent = avatar01.nom;
+
+};
+
+function textsdialogue02(){
+    
+    text02.textContent=" ok"
+    dialogbox.appendChild(text02)
+    dialogbox.appendChild(boutontext01)
+    dialogbox.appendChild(boutontext02)
+    zoneprofil.textContent = avatar01.nom;
 
 };
 

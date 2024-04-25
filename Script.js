@@ -1,6 +1,19 @@
 
 // This is where everything begin ;) //
 
+    popup.style.display= "none";
+    zonedepart.style.display="none"
+    function displaypopup(){
+        let popup = document.getElementById("pop")
+        popup.style.display= ""
+        
+        buttonpop.addEventListener("click",()=>{
+            popup.style.display= "none";
+            zonedepart.style.display=""
+        })
+        
+    }
+setTimeout (displaypopup, 500);
 depart()
 
 avataremployeurF.addEventListener("click",()=>{
@@ -17,7 +30,7 @@ avataremployeurH.addEventListener("click",()=>{
     nomavatar.style.display="";
     phraseavatar.style.display='none'
     blockemployeur.style.display="";
-    profilut.style.display=""
+    profilut.style.display="none"
     
 })
 
@@ -29,10 +42,13 @@ validernom2.addEventListener("click",()=>{
     dial01()
     console.log(avatar01.nom)
     textsdialogue()
- 
-
 })
 
+boutontext01.addEventListener("click",()=>{
+   
+
+   textsdialogue02()
+})
 
 
 

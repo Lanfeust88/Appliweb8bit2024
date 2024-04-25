@@ -80,12 +80,12 @@ dialut.classList.add("lesavatarsut");
     }
 
 dialogbox.appendChild(dialut);
+boutontext02.addEventListener("click",()=>
+{
+    dialut.style.display="none"
 
-
-
-
+})
 }
-
 
 
 // Dialogues //
@@ -95,7 +95,7 @@ let text01 = document.createElement("p")
 text01.classList.add("textsdialogues")
 
 let boutontext01= document.createElement("button")
-boutontext01.textContent="Pourquoi pas, dis m'en plus sur toi avant.";
+boutontext01.textContent="Show me your skills, Cyril !";
 boutontext01.classList.add("boutonstexts");
 let boutontext02= document.createElement("button")
 boutontext02.textContent="Non désolé, je m'en vais";
@@ -106,11 +106,17 @@ boutontext02.classList.add("boutonstexts");
 let text02 = document.createElement("p")
 text02.classList.add("textsdialogues")
 
+let text03 = document.createElement("p")
+text03.classList.add("textsdialogues2")
+
+let boutontextrestart= document.createElement("button")
+boutontextrestart.textContent="Try again ?";
+boutontextrestart.classList.add("boutonrestart");
 
 
 function textsdialogue(){
     
-    text01.textContent=" Enchanté "+ avatar01.nom +" !"+ " Comme vous le savez sûrement, je suis à la recherche d'une alternance pour la rentrée de septembre 2024-2025. Peut-être pourriez-vous m'aider ?"
+    text01.textContent=" Enchanté "+ avatar01.nom +" !"+ " Comme vous le savez sûrement, je suis à la recherche d'une alternance pour la rentrée de septembre 2024. Peut-être pourriez-vous m'aider ?"
     dialogbox.appendChild(text01)
     dialogbox.appendChild(boutontext01)
     dialogbox.appendChild(boutontext02)
@@ -120,12 +126,23 @@ function textsdialogue(){
 
 function textsdialogue02(){
     
-    text02.textContent=" ok"
+    text02.textContent="Mince... Si vous changez d'avis, n'hésitez pas à cliquer sur le bouton ci-dessous"
     dialogbox.appendChild(text02)
+    dialogbox.appendChild(boutontextrestart)
+    zoneprofil.textContent = avatar01.nom;
+    
+};
+
+function textsdialogue03(){
+    
+    text02.textContent="Super ! C'est parti alors !"
+    text03.textContent="MotionDesigner pendant 13 ans, j'ai eu l'opportunité de travailler sur un max de super projet !"
+    
+    dialogbox.appendChild(text02)
+    dialogbox.appendChild(text03)
     dialogbox.appendChild(boutontext01)
     dialogbox.appendChild(boutontext02)
     zoneprofil.textContent = avatar01.nom;
-
 };
 
 

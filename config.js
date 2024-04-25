@@ -11,6 +11,11 @@ let profilut=document.getElementById("profil")
 let imgprofilh=document.getElementById("avatarhommeprofil")
 let imgprofilf=document.getElementById("avatarfemmeprofil")
 let zoneprofil=document.getElementById("nomprofil")
+const letsgo =document.getElementById("buttonpop")
+
+
+
+
 
 // Récupération des mes éléments HTML d'introduction //
 let dialogbox = document.getElementById("dialogue");
@@ -23,20 +28,18 @@ let validernom2 = document.getElementById("validernom")
 
 //Objets utilisateur//
 let profil =document.getElementById("profil")
-    //null défini par le "click" avatar et la box "text"
+
+//null défini par le "click" avatar et la box "text"
 let dialcyril = document.createElement("img")
 dialcyril.src = "images/_996826cf-77ab-4fc6-8aef-fb999d0662df.jpeg";
 dialcyril.classList.add("lesavatarscyril");
+
 //choix avatar utilisateur//
 let imgprofil=document.getElementById("imgprofil")
 let avatar01 = {
     genre : null,
     nom : null ,
 }
-
-
-
-
 
 // Config de mes fonctions//
     
@@ -49,13 +52,13 @@ elementsintro.style.display="none";
 nomavatar.style.display="none";
 blockemployeur.style.display="none";
 boutondepart.addEventListener("click",()=>{
+
     zonedepart.style.display="none";
     elementsintro.style.display="";
     dialogbox.style.display=""
 
 })
 }
-
 
 function dial01(){
 dialogbox.appendChild(dialcyril)
@@ -130,7 +133,10 @@ function textsdialogue02(){
     dialogbox.appendChild(text02)
     dialogbox.appendChild(boutontextrestart)
     zoneprofil.textContent = avatar01.nom;
-    
+
+    boutontextrestart.addEventListener("click", function(event){
+        location.reload(true);
+    })
 };
 
 function textsdialogue03(){

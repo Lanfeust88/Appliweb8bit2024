@@ -1,0 +1,213 @@
+.zonejeu {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+  }
+
+.zonejeu{
+    width: 1280px;
+    height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-image: url(images/_d3529d5e-6459-49b7-a636-6d47027e0caf.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -300px;
+    border-radius: 50px;
+}
+#profil{
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    margin-top: 50px;
+    border-radius: 30px;
+    position: relative;
+    float: right;
+    background-color: blanchedalmond;
+}
+#nomprofil{
+    position: relative;
+    margin-top: -15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+#avatarhommeprofil{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+#avatarfemmeprofil{
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+}
+/* Elements de lancement */
+#depart{
+    position: relative;
+    width: 250px;
+    top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#avatarcyrildepart{
+    position: relative;
+    width: 250px;
+    border-radius: 50px;
+
+}
+#depart h1{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    background-color: rgba(254, 236, 200, 1);}
+#depart button{
+    position: relative;
+    left: 65px;
+    font-size: 20px;
+    font-family: "Pixelify Sans";
+    
+}
+#depart button:hover{
+    transform: scale(1.2);
+    color: white;
+    background-color: red;
+    
+}
+
+/* Elements de l'introduction' */
+
+#dialogue{
+    position: relative;
+    top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(254, 236, 200, 0.8);
+    border-radius: 25px;
+    transition: transform 200ms ease-out ;
+}
+#dialogue:hover{
+    transform: scale(1.02);
+    transition: transform 1000ms ease-out ;
+}
+#introduction{
+    
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    
+}
+#introduction:hover{
+    transform: scale(1.02);
+    transition: transform 1000ms ease-out ;
+   
+    
+    
+}
+#avatarcyrilintro{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    width: 100px;
+    border-radius: 10px;
+
+}
+#introduction p{
+    position: relative;
+    left: 150px;
+    top: -60px;
+    width: 70%;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#avataremployeur{
+    animation: fadeIn 5s;
+    width: 300px;
+    position: relative;
+    top: -70px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+#avatarhomme{
+    width: 150px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+#avatarhomme:hover{
+    transform: scale(1.1);
+}
+#avatarfemme{
+    width: 150px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+#avatarfemme:hover{
+    transform: scale(1.1);
+}
+
+#nomemployeur{
+    display: grid;
+    place-items: center;
+    margin-top: -50px;
+}
+#validernom{
+    margin-top: 10px;
+}
+
+.lesavatarscyril {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.lesavatarsut {
+    position: relative;
+    top: 200px;
+    left: 320px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+
+    
+
+}
+
+.textsdialogues{
+    position: relative;
+    margin-top: -100px;
+    margin-left: 180px;
+    width: 450px;
+
+}
+
+.boutonstexts{
+
+    position: relative;
+    top: 120px;
+    margin-left: 20px;
+    border-radius: 5px;
+   
+}
+.boutonstexts:hover{
+    color: black;
+    background-color: greenyellow;
+}

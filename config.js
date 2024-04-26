@@ -111,6 +111,15 @@ text03.classList.add("textsdialogues2")
 let boutontextrestart= document.createElement("button")
 boutontextrestart.textContent="Try again ?";
 boutontextrestart.classList.add("boutonrestart");
+let boutontext03= document.createElement("button")
+boutontext03.textContent="Dis m'en plus sur ces projets";
+boutontext03.classList.add("boutonstexts");
+let boutontext04= document.createElement("button")
+boutontext04.textContent="Parle moi plutôt du code";
+boutontext04.classList.add("boutonstexts");
+
+//Dial03
+
 
 function textsdialogue(){ 
     text01.textContent=" Enchanté "+ avatar01.nom +" !"+ " Comme vous le savez sûrement, je suis à la recherche d'une alternance pour la rentrée de septembre 2024. Peut-être pourriez-vous m'aider ?"
@@ -140,7 +149,12 @@ function textsdialogue03(){
     dialogbox.appendChild(boutontext01)
     dialogbox.appendChild(boutontext02)
     zoneprofil.textContent = avatar01.nom;
+    dialogbox.appendChild(boutontext03)
+    dialogbox.appendChild(boutontext04)
+    clip.play()
+
 };
+
 
 
 

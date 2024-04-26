@@ -151,7 +151,7 @@ function textsdialogue03(){
     zoneprofil.textContent = avatar01.nom;
     dialogbox.appendChild(boutontext03)
     dialogbox.appendChild(boutontext04)
-    clip.play()
+
 
 };
 

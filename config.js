@@ -12,8 +12,6 @@ let imgprofilh=document.getElementById("avatarhommeprofil")
 let imgprofilf=document.getElementById("avatarfemmeprofil")
 let zoneprofil=document.getElementById("nomprofil")
 const letsgo =document.getElementById("buttonpop");
-
-
 // Elements sonores
 const volmoins = document.getElementById("-");
 const volplus = document.getElementById("+");
@@ -35,7 +33,6 @@ volplus.addEventListener("click",()=>{
     musique.volume= musique.volume + 0.1;
 });
 const musiclose= new Audio("Musiques/304.mp3");
-
 
 // Récupération des mes éléments HTML d'introduction //
 let dialogbox = document.getElementById("dialogue");
@@ -63,20 +60,16 @@ let avatar01 = {
 
 // Config de mes fonctions//
     
-
 function depart (){
-
 profilut.style.display="none"
 dialogbox.style.display="none"
 elementsintro.style.display="none";
 nomavatar.style.display="none";
 blockemployeur.style.display="none";
 boutondepart.addEventListener("click",()=>{
-
     zonedepart.style.display="none";
     elementsintro.style.display="";
     dialogbox.style.display=""
-
 })
 }
 
@@ -85,32 +78,17 @@ dialogbox.appendChild(dialcyril)
 let dialut = document.createElement("img");
 dialut.classList.add("lesavatarsut");
 
-
-
     if(avatar01.genre === 'femme'){
-        dialut.src = "images/_a61c3a5d-2276-41f5-901d-e13c8b447ca2.jpeg";  
-    }
-    else{
-        dialut.src = "images/_5bb61b85-dd98-4c22-be8e-5a1b622c5b80.jpeg";
-    }
+        dialut.src = "images/_a61c3a5d-2276-41f5-901d-e13c8b447ca2.jpeg";  }
+    else{ dialut.src = "images/_5bb61b85-dd98-4c22-be8e-5a1b622c5b80.jpeg"; }
+   
     if(avatar01.genre === 'femme')
-    {  
-        imgprofilh.style.display="none";
-    }
-    else{
-        
-        imgprofilf.style.display="none";
-    }
+    {imgprofilh.style.display="none";}
+    else{imgprofilf.style.display="none";}
 
 dialogbox.appendChild(dialut);
 boutontext02.addEventListener("click",()=>
-{
-    dialut.style.display="none"
-
-})
-}
-
-
+{dialut.style.display="none"})}
 // Dialogues //
 
 //Dial 01
@@ -128,23 +106,18 @@ boutontext02.classList.add("boutonstexts");
 
 let text02 = document.createElement("p")
 text02.classList.add("textsdialogues")
-
 let text03 = document.createElement("p")
 text03.classList.add("textsdialogues2")
-
 let boutontextrestart= document.createElement("button")
 boutontextrestart.textContent="Try again ?";
 boutontextrestart.classList.add("boutonrestart");
 
-
-function textsdialogue(){
-    
+function textsdialogue(){ 
     text01.textContent=" Enchanté "+ avatar01.nom +" !"+ " Comme vous le savez sûrement, je suis à la recherche d'une alternance pour la rentrée de septembre 2024. Peut-être pourriez-vous m'aider ?"
     dialogbox.appendChild(text01)
     dialogbox.appendChild(boutontext01)
     dialogbox.appendChild(boutontext02)
     zoneprofil.textContent = avatar01.nom;
-
 };
 
 function textsdialogue02(){
@@ -160,10 +133,8 @@ function textsdialogue02(){
 };
 
 function textsdialogue03(){
-    
     text02.textContent="Super ! C'est parti alors !"
     text03.textContent="MotionDesigner pendant 13 ans, j'ai eu l'opportunité de travailler sur un max de super projet !"
-    
     dialogbox.appendChild(text02)
     dialogbox.appendChild(text03)
     dialogbox.appendChild(boutontext01)

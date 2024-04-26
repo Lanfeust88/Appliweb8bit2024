@@ -7,33 +7,24 @@ zonedepart.style.display="none"
         let popup = document.getElementById("pop")
         popup.style.display= ""
 
-
-    
-        
         buttonpop.addEventListener("click",()=>{
             popup.style.display= "none";
-            zonedepart.style.display=""
-            
+            zonedepart.style.display="" 
         })
         }
-
 setTimeout (displaypopup, 500);
 
 // This is where everything begin ;) //
 
-
-
 depart()
 
 avataremployeurF.addEventListener("click",()=>
-{
-    avatar01.genre = 'femme';
+{   avatar01.genre = 'femme';
     allavatar.style.display='none'
     nomavatar.style.display="";
     phraseavatar.style.display='none'
     blockemployeur.style.display=""; 
 })
-
 avataremployeurH.addEventListener("click",()=>
 {
     avatar01.genre = 'Homme';
@@ -44,19 +35,15 @@ avataremployeurH.addEventListener("click",()=>
     profilut.style.display="none"
     
 })
-
 validernom2.addEventListener("click",()=>
 {
     avatar01.nom = nomavatar.value;
     blockemployeur.style.display="none"
     elementsintro.style.display="none"
     profilut.style.display=""
-    
     dial01()
-
     textsdialogue()
 })
-
 boutontext02.addEventListener("click",()=>
 {
     boutontext01.style.display="none"

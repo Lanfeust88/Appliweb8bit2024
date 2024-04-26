@@ -22,11 +22,14 @@
 .pop p{
     text-align: center;
     position: relative;
-    top: 30px;
+    padding: 10px;
+    top:10 px;
 }
 .pop button{
     position: relative;
-    left: 165px;
+    left: 120px;
+    top: -68px;
+    margin-right: 20px;
     color: white;
    background-color: red;
 }
@@ -49,6 +52,15 @@
     background-size: cover;
     background-position: 0px -300px;
     border-radius: 50px;
+}
+#flou{
+    position: absolute;
+    margin-top: -200px;
+    width: 1280px;
+    height: 720px;
+    border-radius: 50px;
+    opacity: 0.5;
+    background-color: antiquewhite;
 }
 #profil{
     width: 100px;

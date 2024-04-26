@@ -13,27 +13,6 @@ let imgprofilf=document.getElementById("avatarfemmeprofil")
 let zoneprofil=document.getElementById("nomprofil")
 const letsgo =document.getElementById("buttonpop");
 
-// Elements sonores
-const volmoins = document.getElementById("-");
-const volplus = document.getElementById("+");
-const musique = new Audio("Musiques/204_full_8bit-adventure_0155_preview.mp3");
-const musicOn = document.getElementById("musicon");
-const musicoff=document.getElementById("off");
-
-musicOn.addEventListener("click",()=>{
-    musique.play();
-    musicOn.style.display=("none")
-});
-musicoff.addEventListener("click",()=>{
-    musique.volume=0
-});
-volmoins.addEventListener("click",()=>{
-    musique.volume= musique.volume - 0.1;
-});
-volplus.addEventListener("click",()=>{
-    musique.volume= musique.volume + 0.1;
-});
-const musiclose= new Audio("Musiques/304.mp3");
 
 
 
@@ -48,20 +27,18 @@ let validernom2 = document.getElementById("validernom")
 
 //Objets utilisateur//
 let profil =document.getElementById("profil")
-    //null défini par le "click" avatar et la box "text"
+
+//null défini par le "click" avatar et la box "text"
 let dialcyril = document.createElement("img")
 dialcyril.src = "images/_996826cf-77ab-4fc6-8aef-fb999d0662df.jpeg";
 dialcyril.classList.add("lesavatarscyril");
+
 //choix avatar utilisateur//
 let imgprofil=document.getElementById("imgprofil")
 let avatar01 = {
     genre : null,
     nom : null ,
 }
-
-
-
-
 
 // Config de mes fonctions//
     
@@ -74,13 +51,13 @@ elementsintro.style.display="none";
 nomavatar.style.display="none";
 blockemployeur.style.display="none";
 boutondepart.addEventListener("click",()=>{
+
     zonedepart.style.display="none";
     elementsintro.style.display="";
     dialogbox.style.display=""
 
 })
 }
-
 
 function dial01(){
 dialogbox.appendChild(dialcyril)
@@ -155,7 +132,10 @@ function textsdialogue02(){
     dialogbox.appendChild(text02)
     dialogbox.appendChild(boutontextrestart)
     zoneprofil.textContent = avatar01.nom;
-    
+
+    boutontextrestart.addEventListener("click", function(event){
+        location.reload(true);
+    })
 };
 
 function textsdialogue03(){

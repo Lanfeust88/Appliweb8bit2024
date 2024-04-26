@@ -57,6 +57,8 @@ boutontext02.addEventListener("click",()=>
     boutontext02.style.display="none"
     text01.style.display="none"
     profilut.style.display="none";
+    musique.volume="0"
+    musiclose.play()
 
     textsdialogue02();
 })

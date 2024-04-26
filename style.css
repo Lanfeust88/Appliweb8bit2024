@@ -317,3 +317,18 @@
     color: black;
     background-color: rgb(12, 224, 65);
 }
+#zoneboutonsvol{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 600px;
+    margin-left: 20px;
+    background-color: rgb(11, 184, 63);
+    border-radius: 15px;
+}
+#zoneboutonsvol button{
+    position: relative;
+    width: 30px;
+    top: 20px;
+    margin-left: 10px
+}

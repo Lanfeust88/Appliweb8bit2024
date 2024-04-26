@@ -14,6 +14,27 @@ let zoneprofil=document.getElementById("nomprofil")
 const letsgo =document.getElementById("buttonpop");
 
 
+// Elements sonores
+const volmoins = document.getElementById("-");
+const volplus = document.getElementById("+");
+const musique = new Audio("Musiques/204_full_8bit-adventure_0155_preview.mp3");
+const musicOn = document.getElementById("musicon");
+const musicoff=document.getElementById("off");
+
+musicOn.addEventListener("click",()=>{
+    musique.play();
+    musicOn.style.display=("none")
+});
+musicoff.addEventListener("click",()=>{
+    musique.volume=0
+});
+volmoins.addEventListener("click",()=>{
+    musique.volume= musique.volume - 0.1;
+});
+volplus.addEventListener("click",()=>{
+    musique.volume= musique.volume + 0.1;
+});
+const musiclose= new Audio("Musiques/304.mp3");
 
 
 // Récupération des mes éléments HTML d'introduction //

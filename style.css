@@ -295,9 +295,33 @@
     opacity: 1;
     
     position: relative;
-    margin-top: 0px;
+    margin-top: -15px;
     margin-left: 180px;
-    width: 450px;
+    width: 460px;
+
+}
+.textsdialogues3{
+    animation-delay: 0s;
+    animation-name: opacity;
+    animation-duration: 2s;
+    opacity: 1;
+  
+    
+    position: relative;
+    margin-top: -10px;
+    margin-left: 20px;
+    width: 600px;
+
+}
+.textsdialogues4{
+    animation-delay: 0s;
+    animation-name: opacity;
+    animation-duration: 2s;
+    opacity: 1;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 500px;
 
 }
 
@@ -312,6 +336,34 @@
 .boutonstexts:hover{
     color: black;
     background-color: greenyellow;
+}
+.boutonstexts2{
+
+    position: relative;
+    top: -40px;
+    margin-left: 110px;
+    border-radius: 5px;
+   
+}
+.boutonstexts2:hover{
+    color: black;
+    background-color: greenyellow;
+}
+.boutonstexts3{
+
+    position: relative;
+    top: 0px;
+    font-size: large;
+    width: 150px;
+    height: 40px;
+    margin-left: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(68, 118, 226);
+   
+}
+.boutonstexts3:hover{
+    scale: 1.2;
 }
 .boutonrestart{
 

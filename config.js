@@ -1,3 +1,4 @@
+
 // Récupération des mes éléments HTML de départ //
 let popup = document.getElementById("pop");
 let buttonpop = document.getElementById("buttonpop");
@@ -12,6 +13,8 @@ let imgprofilh=document.getElementById("avatarhommeprofil")
 let imgprofilf=document.getElementById("avatarfemmeprofil")
 let zoneprofil=document.getElementById("nomprofil")
 const letsgo =document.getElementById("buttonpop");
+
+
 // Elements sonores
 const volmoins = document.getElementById("-");
 const volplus = document.getElementById("+");
@@ -78,13 +81,10 @@ dialogbox.appendChild(dialcyril)
 let dialut = document.createElement("img");
 dialut.classList.add("lesavatarsut");
 
-    if(avatar01.genre === 'femme'){
-        dialut.src = "images/_a61c3a5d-2276-41f5-901d-e13c8b447ca2.jpeg";  }
-    else{ dialut.src = "images/_5bb61b85-dd98-4c22-be8e-5a1b622c5b80.jpeg"; }
-   
-    if(avatar01.genre === 'femme')
-    {imgprofilh.style.display="none";}
-    else{imgprofilf.style.display="none";}
+avatar01.genre ==="femme" ? dialut.src = "images/_a61c3a5d-2276-41f5-901d-e13c8b447ca2.jpeg" :dialut.src = "images/_5bb61b85-dd98-4c22-be8e-5a1b622c5b80.jpeg";
+
+avatar01.genre ==="femme" ? imgprofilh.style.display="none":imgprofilf.style.display="none";
+
 
 dialogbox.appendChild(dialut);
 boutontext02.addEventListener("click",()=>
@@ -108,16 +108,28 @@ let text02 = document.createElement("p")
 text02.classList.add("textsdialogues")
 let text03 = document.createElement("p")
 text03.classList.add("textsdialogues2")
+let text04 = document.createElement("p")
+text04.classList.add("textsdialogues3")
+let text05 = document.createElement("p")
+text05.classList.add("textsdialogues4")
+let text06=document.createElement("p")
+text06.classList.add("textsdialogues4")
+let text07=document.createElement("p")
+text07.classList.add("textsdialogues")
+let text08=document.createElement("p")
+text08.classList.add("textsdialogues4")
 let boutontextrestart= document.createElement("button")
 boutontextrestart.textContent="Try again ?";
 boutontextrestart.classList.add("boutonrestart");
 let boutontext03= document.createElement("button")
-boutontext03.textContent="Dis m'en plus sur ces projets";
-boutontext03.classList.add("boutonstexts");
+boutontext03.textContent="Suite";
+boutontext03.classList.add("boutonstexts2");
 let boutontext04= document.createElement("button")
-boutontext04.textContent="Parle moi plutôt du code";
-boutontext04.classList.add("boutonstexts");
-
+boutontext04.textContent="Linkedin"
+boutontext04.classList.add("boutonstexts3");
+boutontext04.onclick= function(){
+    document.location.href="https://www.linkedin.com/in/cyril-plou/"
+};
 //Dial03
 
 
@@ -143,16 +155,30 @@ function textsdialogue02(){
 
 function textsdialogue03(){
     text02.textContent="Super ! C'est parti alors !"
-    text03.textContent="MotionDesigner pendant 13 ans, j'ai eu l'opportunité de travailler sur un max de super projet !"
+    text03.textContent="MotionDesigner pendant 13 ans, j'ai eu l'opportunité de travailler sur un grand nombre de supers projets !"
+    text04.textContent="A présent, je veux me tourner vers une autre passion : le code ! Je me suis auto-formé en HTML, CSS et Javascript. J'ai aussi de très bonnes notions en Wordpress."
+    text06.textContent="Au mois de septembre, j'intègre la formation Développeur Web & mobile en alternance chez Simplon..."
+    text07.textContent=" Dynamique, passionné et investi, j'aspire à intégrer en septembre une équipe avec qui partager, échanger et apprendre !"
+    text08.textContent=" Alors si vous désirez que l'on échange, par message ou de vive voix, contactez-moi via Linkedin."
     dialogbox.appendChild(text02)
     dialogbox.appendChild(text03)
     dialogbox.appendChild(boutontext01)
     dialogbox.appendChild(boutontext02)
-    zoneprofil.textContent = avatar01.nom;
+    dialogbox.appendChild(text04)
+    dialogbox.appendChild(text06)
     dialogbox.appendChild(boutontext03)
+    zoneprofil.textContent = avatar01.nom;
+    boutontext03.addEventListener("click",()=>
+{
+    text02.style.display="none"
+    text03.style.display="none"
+    text04.style.display="none"
+    text06.style.display="none"
+    dialogbox.appendChild(text07)
+    boutontext03.style.display="none"
+    dialogbox.appendChild(text08)
     dialogbox.appendChild(boutontext04)
-
-
+})
 };
 
 

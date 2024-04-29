@@ -7,4 +7,5 @@ To Launch <strong>Altern'App</strong> :
 <a href="https://htmlpreview.github.io/?https://github.com/Lanfeust88/Appliweb8bit2024/blob/master/index.html"> Launch App </a>
 
 <strong>FROM REPOSITORY : </stron>
-1 - Click on index.html file.
+1- Download Master Branche.
+2 - Double-Click on index.html file.

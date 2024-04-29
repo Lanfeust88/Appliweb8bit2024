@@ -1,4 +1,3 @@
-
 // Récupération des mes éléments HTML de départ //
 let popup = document.getElementById("pop");
 let buttonpop = document.getElementById("buttonpop");
@@ -13,7 +12,6 @@ let imgprofilh=document.getElementById("avatarhommeprofil")
 let imgprofilf=document.getElementById("avatarfemmeprofil")
 let zoneprofil=document.getElementById("nomprofil")
 const letsgo =document.getElementById("buttonpop");
-
 
 // Elements sonores
 const volmoins = document.getElementById("-");
@@ -61,8 +59,7 @@ let avatar01 = {
     nom : null ,
 }
 
-// Config de mes fonctions//
-    
+// Config de mes fonctions//   
 function depart (){
 profilut.style.display="none"
 dialogbox.style.display="none"
@@ -94,7 +91,6 @@ boutontext02.addEventListener("click",()=>
 //Dial 01
 let text01 = document.createElement("p")
 text01.classList.add("textsdialogues")
-
 let boutontext01= document.createElement("button")
 boutontext01.textContent="Show me your skills, Cyril !";
 boutontext01.classList.add("boutonstexts");
@@ -103,7 +99,6 @@ boutontext02.textContent="Non désolé, je m'en vais";
 boutontext02.classList.add("boutonstexts");
 
 //Dial 02
-
 let text02 = document.createElement("p")
 text02.classList.add("textsdialogues")
 let text03 = document.createElement("p")
@@ -131,8 +126,6 @@ boutontext04.onclick= function(){
     document.location.href="https://www.linkedin.com/in/cyril-plou/"
 };
 //Dial03
-
-
 function textsdialogue(){ 
     text01.textContent=" Enchanté "+ avatar01.nom +" !"+ " Comme vous le savez sûrement, je suis à la recherche d'une alternance pour la rentrée de septembre 2024. Peut-être pourriez-vous m'aider ?"
     dialogbox.appendChild(text01)

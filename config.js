@@ -60,6 +60,15 @@ let avatar01 = {
 }
 
 // Config de mes fonctions//   
+function displaypopup(){
+    let popup = document.getElementById("pop")
+    popup.style.display= ""
+
+    buttonpop.addEventListener("click",()=>{
+        popup.style.display= "none";
+        zonedepart.style.display="" 
+    })
+    }
 function depart (){
 profilut.style.display="none"
 dialogbox.style.display="none"

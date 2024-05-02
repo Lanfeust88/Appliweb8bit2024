@@ -3,15 +3,6 @@
 
 popup.style.display= "none";
 zonedepart.style.display="none"
-    function displaypopup(){
-        let popup = document.getElementById("pop")
-        popup.style.display= ""
-
-        buttonpop.addEventListener("click",()=>{
-            popup.style.display= "none";
-            zonedepart.style.display="" 
-        })
-        }
 setTimeout (displaypopup, 500);
 
 // This is where everything begin ;) //
